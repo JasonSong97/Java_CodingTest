@@ -18,11 +18,12 @@ public class PG_12933 {
             list.add(n % 10);
             n /= 10;
         }
-        list.sort(Comparator.reverseOrder());
+        list.sort(Comparator.reverseOrder());// 역순으로 바꿔주는 
         
         for (int i = 0; i < list.size(); i++) {
             answer += (long) (list.get(i) * Math.pow(10, list.size() - i - 1));
         }
+        
         System.out.println(answer);
     }
 }
