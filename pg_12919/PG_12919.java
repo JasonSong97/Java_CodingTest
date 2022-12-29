@@ -18,7 +18,6 @@ public class PG_12919 {
                 break;
             }
         }
-
         answer = "김서방은 " + idx + "에 있다";// String answer = ""; 에다가 더하는 것이 가능함. 처음알았다!!!!!
         System.out.println(answer);
     }
