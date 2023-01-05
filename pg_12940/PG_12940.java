@@ -32,13 +32,10 @@ public class PG_12940 {
         }
         return n;
     }
-    /*
+    /* 재귀 함수 방법
     public static int gcd(int p, int q) {
         if (q == 0) return p;
         return gcd(q, p % q);
     }
-
-
-
-     */
+    */
 }
