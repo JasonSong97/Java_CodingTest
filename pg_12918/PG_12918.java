@@ -10,11 +10,14 @@ public class PG_12918 {
         String s = br.readLine();
         boolean answer = true;
 
-        for (int i = 0; i < s.length(); i++) {
-            if ('0' > s.charAt(i) && s.charAt(i) > '9') {
+        for (int i = 0; i < s.length(); i++) {            
+            if (s.charAt(i) < '0' || s.charAt(i) > '9') {
                 answer = false;
-                break;
             }
+        }
+        
+        if (s.length() != 4 && s.length() != 6) {
+            answer = false;
         }
 
         System.out.println(answer);
